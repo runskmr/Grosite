@@ -1,0 +1,15 @@
+body {
+    background-color: #5b80b2;
+    color: #264b5d;
+    font-size: 25px;
+    font-style: italic;
+}
+
+h1 {
+    position: center;
+}
+
+.hbar1 {
+    display: inline;
+    margin: 15px;
+}

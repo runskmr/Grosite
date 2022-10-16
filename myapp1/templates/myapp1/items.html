@@ -1,0 +1,16 @@
+{% extends 'myapp1/base.html' %}
+{% block body_block %}
+
+<body>
+{% if itemlist %}
+<h2> List of Items </h2>
+<ol>
+	{% for item in itemlist %}
+        <li> {{ item.name }}</li>
+{% endfor %}
+</ol>
+{% else %}
+<strong> There are no items! </strong>
+{% endif %}
+</body>
+{% endblock %}

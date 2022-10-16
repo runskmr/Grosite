@@ -1,0 +1,18 @@
+{% extends 'myapp1/base.html' %}
+{% block body_block %}
+
+<body>
+{% if items %}
+<h2> List of Items </h2>
+<ol>
+	{% for item in items %}
+<li> {{ item.name}} </li>
+{% endfor %}
+</ol>
+{% else %}
+<strong> There are no items! </strong>
+{% endif %}
+
+<p><a href="{% url 'myapp1:index' %}">Home page</a></p>
+</body>
+{% endblock %}

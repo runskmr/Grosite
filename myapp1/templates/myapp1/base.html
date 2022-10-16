@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp1/style.css' %}"/>
+    <title> Online Grocery Store - {% block title %} Welcome! {% endblock %}</title>
+</head>
+<body>
+<div>
+    <h1>{% block myhdg %} Hello Group 8 {% endblock %}</h1>
+    {% block body_block %}*** {% endblock %}
+</div>
+<hr />
+<div>
+    <ul>
+        <li class="hbar1"><a href="http://127.0.0.1:8000/about/"> Find out about this site </a></li>
+        <li class="hbar1"><a href = "{% url 'myapp1:index'%}"> Click here to return to main page </a><br/></li>
+        <li class="hbar1"><a href="{% url 'myapp1:items' %}"> List of Items </a> </li>
+    </ul>
+</div>
+</body>
